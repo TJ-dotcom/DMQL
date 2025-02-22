@@ -1,0 +1,15 @@
+   \copy Authors(author_id, name) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Authors.csv' DELIMITER ',' CSV HEADER;
+   \copy Publishers(publisher_id, name) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Publishers.csv' DELIMITER ',' CSV HEADER;
+   \copy Genres(genre_id, name) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Genres.csv' DELIMITER ',' CSV HEADER;
+   \copy Languages(language_id, name) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Languages.csv' DELIMITER ',' CSV HEADER;
+   \copy Addresses(address_id, street, city, state, zip_code) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Addresses.csv' DELIMITER ',' CSV HEADER;
+   \copy Books(book_id, title, isbn, publication_year, author_id, publisher_id, genre_id, language_id) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Books.csv' DELIMITER ',' CSV HEADER;
+   \copy Users(user_id, name, email, phone_number, address_id) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Users.csv' DELIMITER ',' CSV HEADER;
+   \copy Book_Copies(copy_id, book_id, status, address_id) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Book_Copies.csv' DELIMITER ',' CSV HEADER;
+   \copy Loans(loan_id, user_id, book_id, checkout_date, due_date) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Loans.csv' DELIMITER ',' CSV HEADER;
+   \copy Staff(staff_id, name, position, address_id) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Staff.csv' DELIMITER ',' CSV HEADER;
+   \copy Library_Branches(branch_id, name, address_id) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Library_Branches.csv' DELIMITER ',' CSV HEADER;
+   \copy Events(event_id, branch_id, name, date) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Events.csv' DELIMITER ',' CSV HEADER;
+   \copy Fines(fine_id, loan_id, amount) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Fines.csv' DELIMITER ',' CSV HEADER;
+   \copy Book_Reviews(review_id, book_id, user_id, rating, review_text) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Book_Reviews.csv' DELIMITER ',' CSV HEADER;
+   \copy Reservations(reservation_id, book_id, user_id, reservation_date) FROM 'C:\Users\ideal\DMQL datasets\database\new_database\Reservations.csv' DELIMITER ',' CSV HEADER;
